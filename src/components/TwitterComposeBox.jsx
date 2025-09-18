@@ -55,7 +55,7 @@ export class TwitterComposeBox extends Component {
 
         if (charsLeft < 0) {
             newColor = colors.charCountRed;
-            newCharCountColor = "text-[" + colors.charCountRed + "]";
+            newCharCountColor = `text-[${colors.charCountRed}]`;
         } else if (charsLeft < yellowOffset) {
             newColor = colors.charCountYellow;
         } else {
@@ -112,7 +112,7 @@ export class TwitterComposeBox extends Component {
                                                     ></circle>
                                                     <circle
                                                         cx="18" cy="18" r="15.915"
-                                                        className={"stroke-current text-[" + this.state.color + "]"}
+                                                        className={`stroke-current text-[${this.state.color}]`}
                                                         strokeWidth="2"
                                                         fill="transparent"
                                                         strokeDasharray="100"
